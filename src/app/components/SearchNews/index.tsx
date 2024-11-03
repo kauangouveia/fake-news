@@ -1,6 +1,6 @@
 'use client'
 import fake from '@/assets/fake.jpg'
-import fato from '@/assets/fato.png'
+import fato from '@/assets/Fato.png'
 import searchIcon from '@/assets/search.png'
 import Image from 'next/image'
 import { useState } from 'react'
