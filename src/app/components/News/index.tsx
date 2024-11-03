@@ -1,8 +1,8 @@
 "use client";
 
-import COVID from '@/assets/COVID.png';
-import dengue from '@/assets/dengue.png';
-import eleicao from '@/assets/eleicao.png';
+import COVID from '../../assets/covid.jpg';
+import dengue from '../../assets/dengue.png';
+import eleicao from '../../assets/eleicao.png';
 import Image from "next/image";
 import { useEffect, useState } from 'react';
 
