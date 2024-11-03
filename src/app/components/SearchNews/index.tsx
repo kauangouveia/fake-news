@@ -1,7 +1,7 @@
 'use client'
-import searchIcon from '@/app/assets/search.png'
-import fato from '@/app/assets/fato.png'
-import fake from '@/app/assets/fake.jpg'
+import searchIcon from '@/app/src/assets/search.png'
+import fato from '@/app/src/assets/fato.png'
+import fake from '@/app/src/assets/fake.jpg'
 import Image from 'next/image'
 import { useState } from 'react'
 

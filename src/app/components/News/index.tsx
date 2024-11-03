@@ -1,9 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import COVID from '@/app/assets/COVID.png';
-import dengue from '@/app/assets/dengue.png';
-import eleicao from '@/app/assets/eleicao.png';
+import COVID from '@/app/src/assets/COVID.png';
+import dengue from '@/app/src/assets/dengue.png';
+import eleicao from '@/app/src/assets/eleicao.png';
 import { useEffect, useState } from 'react';
 
 const news = [
