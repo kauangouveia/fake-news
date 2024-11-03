@@ -1,7 +1,7 @@
 'use client'
-import searchIcon from '@/app/src/assets/search.png'
-import fato from '@/app/src/assets/fato.png'
-import fake from '@/app/src/assets/fake.jpg'
+import fake from '@/assets/fake.jpg'
+import fato from '@/assets/fato.png'
+import searchIcon from '@/assets/search.png'
 import Image from 'next/image'
 import { useState } from 'react'
 
@@ -23,7 +23,7 @@ export const SearchNews = () => {
 
   const checkNews = async (e: any) => {
     setLoading(true);
-    
+
     e.preventDefault();
     const res = await fetch('/api/verify-news', {
       method: 'POST',
@@ -47,7 +47,7 @@ export const SearchNews = () => {
             placeholder="Buscar..."
             type="text"
             className="w-full md:w-[700px] h-14 rounded-xl border border-black px-8 bg-white outline-none text-black"
-            onChange={(e) =>{
+            onChange={(e) => {
               setLoading(true);
               setInput(e.target.value)
               setResult({

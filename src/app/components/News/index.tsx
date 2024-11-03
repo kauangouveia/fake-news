@@ -1,9 +1,9 @@
 "use client";
 
+import COVID from '@/assets/COVID.png';
+import dengue from '@/assets/dengue.png';
+import eleicao from '@/assets/eleicao.png';
 import Image from "next/image";
-import COVID from '@/app/src/assets/COVID.png';
-import dengue from '@/app/src/assets/dengue.png';
-import eleicao from '@/app/src/assets/eleicao.png';
 import { useEffect, useState } from 'react';
 
 const news = [
@@ -34,11 +34,11 @@ export const FakeNews = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setIsFading(true); 
+      setIsFading(true);
       setTimeout(() => {
         setCurrentNewsIndex(nextNewsIndex);
         setNextNewsIndex((nextNewsIndex + 1) % news.length);
-        setIsFading(false); 
+        setIsFading(false);
       }, 1000);
     }, 5000);
 
@@ -51,10 +51,10 @@ export const FakeNews = () => {
         className={`absolute inset-0 transition-opacity duration-1000 ${isFading ? 'opacity-0' : 'opacity-100'}`}
         key={currentNewsIndex}
       >
-        <Image 
-          src={news[currentNewsIndex].image} 
-          alt={news[currentNewsIndex].title} 
-          className="w-full h-full object-cover" 
+        <Image
+          src={news[currentNewsIndex].image}
+          alt={news[currentNewsIndex].title}
+          className="w-full h-full object-cover"
           layout="fill"
         />
       </div>
@@ -63,10 +63,10 @@ export const FakeNews = () => {
         className={`absolute inset-0 transition-opacity duration-1000 ${isFading ? 'opacity-100' : 'opacity-0'}`}
         key={nextNewsIndex}
       >
-        <Image 
-          src={news[nextNewsIndex].image} 
-          alt={news[nextNewsIndex].title} 
-          className="w-full h-full object-cover" 
+        <Image
+          src={news[nextNewsIndex].image}
+          alt={news[nextNewsIndex].title}
+          className="w-full h-full object-cover"
           layout="fill"
         />
       </div>
