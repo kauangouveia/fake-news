@@ -1,19 +1,20 @@
+import Image from "next/image"
+import uam from '@/assets/uam.png'
 export const AboutUS = () => {
   return (
-    <div className="w-full h-[680px] flex flex-col md:flex-row gap-4 items-center justify-center" id="aboutUS">
-      <div className="w-full md:h-full flex flex-col md:flex-row justify-center items-center gap-8 p-4 xl:p-12">
-        <div className="flex flex-col h-full justify-between">
-          <circle className="w-[150px] h-[150px] md:w-[200px] md:h-[205px] lg:w-[256px] lg:h-[251px] bg-gray-500 rounded-full"></circle>
-          <circle className="hidden md:flex w-[200px] h-[205px] lg:w-[256px] lg:h-[251px] bg-gray-500 rounded-full"></circle>
-        </div>
-        <circle className="hidden md:flex w-[200px] h-[205px] lg:w-[256px] lg:h-[251px] bg-gray-500 rounded-full"></circle>
+    <div className="h-[900px] w-full max-w-[1980px] flex flex-col items-start justify-start px-4 md:px-24 text-center" id="about-us">
+      <h2 className="text-2xl md:text-3xl mb-8 text-white font-bold">Nossa missão</h2>
+      <div className="w-full h-[650px] border-[4px] border-white flex flex-col text-center lg:text-start lg:flex-row items-center justify-evenly xl:gap-56 p-4">
+        <h2 className="font-bold text-2xl md:text-5xl text-white w-full max-w-96 text-center">COMBATER FAKE NEWS E PROTEGER A VERDADE</h2>
+        <Image
+          src={uam}
+          alt="Univerdade anhembi morumbi"
+          width={390}
+          height={515}
+          className="2xl:scale-[1.7]"
+        />
       </div>
-      <div className="flex w-full h-full flex-col items-center gap-8 p-4 xl:p-24">
-        <h2 className="font-bold text-black text-3xl xl:text-4xl">Sobre nosso projeto</h2>
-        <p className="text-sm lg:text-xl text-center text-black">
-          There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
-        </p>
-      </div>
+      <p className="text-white xl:text-xl font-medium mt-12">Nós não nos contentamos com o comum. E você também não deveria. Temos uma missão clara: combater a desinformação e promover a verdade. Todos os dias, trabalhamos para criar ferramentas, conteúdos e experiências que ajudem as pessoas a identificar e evitar fake news. Nosso compromisso é oferecer uma análise confiável, inclusiva e acessível para todos, promovendo um ambiente digital mais seguro e transparente.</p>
     </div>
   )
 }
